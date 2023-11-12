@@ -11,10 +11,13 @@
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div>
-                    <a href="/" class="text-lg font-semibold text-slate-900">NWS</a>
+                    <a href="{{route('home')}}" class="text-lg font-semibold text-slate-900">NWS</a>
                 </div>
                 <div>
                     <a href="{{ route('students.index') }}" class="text-slate-900 hover:text-slate-700">Etudiants</a>
+                </div>
+                <div>
+                    <a href="{{ route('equipments.index') }}" class="text-slate-900 hover:text-slate-700">Matériels</a>
                 </div>
     
             </div>
