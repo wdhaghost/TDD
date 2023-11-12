@@ -38,7 +38,6 @@ class StudentController extends Controller
             $student->firstname = $request->firstname;
             $student->mail = $request->mail;
             $student->study = $request->study;
-
             $student->save();
 
             return redirect()->route('students.index');
@@ -76,7 +75,7 @@ class StudentController extends Controller
             $request->validate([
                 'lastname' => 'required|string|min:3',
                 'firstname' => 'required|string|min:3',
-                'mail' => 'required|email|unique:students',
+                'mail' => 'required|email',
                 'study' => 'required|integer|min:1|max:5'
 
             ]);
