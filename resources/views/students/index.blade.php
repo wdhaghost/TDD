@@ -5,7 +5,7 @@
 @section('content')
     <div class="container mx-auto mt-5">
         <h2 class="text-2xl font-semibold mb-4">Liste des Étudiants</h2>
-
+        <a href="{{ route('students.create') }}" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded shadow">Ajouter un Étudiant</a>    
         @if(session('success'))
             <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-4" role="alert">
                 <strong class="font-bold">Succès!</strong>
