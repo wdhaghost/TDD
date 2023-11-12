@@ -12,12 +12,16 @@
                 <h2 class="text-xl font-semibold mb-2">Liste des Étudiants</h2>
                 <ul>
                     <li><a href="{{ route('students.index') }}" class="text-blue-600 hover:text-blue-900">Liste des Étudiants</a></li>
+                    <li>  <a href="{{ route('students.create') }}" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded shadow">Ajouter du matériel</a>    </li>
                 </ul>
-               
+                
             </div>
             <div class="bg-white p-6 rounded-lg shadow-md">
                 <h2 class="text-xl font-semibold mb-2">Liste de matériels</h2>
-               
+                <ul>
+                    <li><a href="{{ route('equipments.index') }}" class="text-blue-600 hover:text-blue-900">Liste des Étudiants</a></li>
+                    <li>  <a href="{{ route('equipments.create') }}" class="bg-green-500 hover:bg-green-600 text-white font-semibold px-4 py-2 rounded shadow">Ajouter du matériel</a>    </li>
+                </ul>
             </div>
 
             <div class="bg-white p-6 rounded-lg shadow-md">
